@@ -1,0 +1,148 @@
+html,body{
+    height: 100% !important;
+    margin: 0;
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.registerCard{
+   width: 600px;
+   background-color: rgba(255,255,255,0.7) !important;
+   font-variant-caps: petite-caps;
+   margin-top: 5vh;
+}
+
+
+@media screen and (max-width:650px){
+    .registerCard{
+        width: auto;
+
+    }
+}
+
+.registerCard input.form-control{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+}
+
+.registerCard input.form-control:valid{
+    background: transparent !important;
+    color: green;
+    border-bottom: 3px solid green !important;
+}
+
+.registerCard input:focus{
+    box-shadow: none;
+}
+.registerCard input:-webkit-autofill,
+.registerCard input:-webkit-autofill:hover,
+.registerCard input:-webkit-autofill:focus
+{
+    background: transparent !important;
+    -webkit-text-fill-color: green;
+    transition: background-color 99999s ease-in-out 0s;
+}
+
+.registerCard input:invalid{
+    color: red !important;
+    border-bottom: 2px solid red !important;
+}
+.registerCard input:increment::placeholder{
+    color: red;
+}
+
+.registerCard button[type=submit]{
+    border: 2px solid green;
+    color: green;
+    background-color: transparent !important;
+}
+
+.registerCard button[type=submit]:hover{
+    background-color: green !important;
+    color: white;
+}
+
+.registerCard button[type=submit]:active{
+    transform: scale(0.95);
+    box-shadow: none !important;
+}
+
+.registerCard button[type=reset]{
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+.registerCard button[type=reset]:hover{
+    background-color: transparent !important;
+    color: green;
+    border: 2px solid green;
+}
+
+
+.registerCard button[type=reset]:active{
+    transform: scale(0.95);
+    box-shadow: none !important;
+    border: 2px solid green;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+@media screen and (max-width:450px){
+    .registerCard button{
+        font-size: 12px;
+    }
+}
+
+.registerCard label{
+    color: green;
+}
+
+.navbar .navbar-brand>span{
+    font-size: 35px;
+    margin-left: 1vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: bottom;
+}
+
+.navbar{
+    background: rgba(3, 131, 24, 0.95);
+}
+
+.navbar .nav-item{
+    transition: 0.4s;
+}
+
+.navbar .nav-item:hover{
+    background-color: darkgreen;
+}
+
+@media screen and (max-width: 991px){
+    .nav-item:not(:last-child){
+        border-bottom: 2px solid lightgreen;
+    }
+    .nav-item{
+        width: 100%;
+    }
+    .nav.navbar-nav{
+        padding-top: 10rem;
+    }
+}
+
+.registerCard input:valid + div.input-group-append > i{
+    border-bottom: 3px solid green;
+  
+}
+
+.registerCard .input-group-append i {
+    border-bottom: 2px solid red;
+    color: green;
+    cursor: pointer;
+    padding-top: 0.7em;
+}
+
+::-webkit-validation-bubble{
+    font-size: 30px !important;
+}

@@ -1,0 +1,32 @@
+.footer-content{
+    background-color: green;
+}
+
+.footer-content h2{
+    color: chartreuse;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.footer-content p{
+    text-align: center;
+    font-size: 1;
+    line-height: 1.8;
+    font-variant-caps: petite-caps;
+    color: lightgreen;
+}
+.author{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(255,255,255,0.6);
+}
+.avatar{
+    object-fit: cover;
+    filter: grayscale(100);
+    cursor: pointer;
+    shape-outside: circle();
+
+}
+.avatar:hover{
+    filter: grayscale(0);
+}

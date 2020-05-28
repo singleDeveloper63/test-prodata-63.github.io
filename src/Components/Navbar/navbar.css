@@ -1,0 +1,10 @@
+.verLine{
+    border-left: 2px solid gray;
+    margin: 0 10px;;
+}
+.navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    overflow: hidden !important;
+} 
