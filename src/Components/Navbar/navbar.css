@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .verLine{
     border-left: 2px solid gray;
     margin: 0 10px;;
@@ -7,4 +14,46 @@
     position: sticky;
     top: 0;
     overflow: hidden !important;
-} 
+}
+
+
+.navbar .navbar-brand>span{
+    font-size: 35px;
+    margin-left: 1vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: bottom;
+}
+
+.navbar{
+    background: rgba(3, 131, 24, 0.95);
+}
+
+.navbar .nav-item{
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.navbar .nav-item::after{
+    content: "";
+    width: 0;
+    display: block;
+    height: 3px;
+    background:greenyellow;
+    background-size: 2px 2px;
+    background-repeat: repeat-x;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+}
+.navbar .nav-item:hover::after{
+    width: 100%;
+}
+@media screen and (max-width: 991px){
+    .nav-item{
+        width: 100%;
+    }
+    .nav.navbar-nav{
+        padding-top: 10rem;
+    }
+}

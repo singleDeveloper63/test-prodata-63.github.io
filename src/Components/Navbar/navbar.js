@@ -6,11 +6,10 @@
 
     render() {
         return (
-        <div>
-            <nav className="navbar navbar-dark navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="0">
+            <nav className="navbar navbar-dark navbar-expand-lg sticky-top" >
                 <div className="container">
                     <Link className="navbar-brand align-bottom p-0" to="/">
-                        <img src={require('../../assets/Logos/circle.png')} className="bg-light rounded-circle" style={{ height: "50px" }} alt="Logo"/>
+                        <img src={require('../../assets/Logos/circle.jpg')} className="bg-light rounded-circle" style={{ height: "50px" }} alt="Logo"/>
                         <span>ProData</span>
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" 
@@ -39,17 +38,17 @@
                                     <i className="fa fa-fw fa-database"></i>    Resurslar
                                 </Link>
                             </li>
-                            <Link style={{ color : 'white', textDecoration : 'none'}} className="ml-5 mx-auto px-2"  to="/register" data-toggle="tooltip" data-placement="bottom" title="Ro'yxatdan o'tish">
+                        </ul>
+                        
+                        <Link style={{ color : 'white', textDecoration : 'none'}} className="ml-auto px-2"  to="/register" data-toggle="tooltip" data-placement="bottom" title="Ro'yxatdan o'tish">
                                 <i className="fa fa-fw fa-user-plus"></i>   <span className="d-lg-none">Ro'yxatdan o'tish</span>
                             </Link>
-                            <Link style={{ color : 'white', textDecoration : 'none'}} className="ml-2 mx-auto px-2"  to="/login" data-toggle="tooltip" data-placement="bottom" title="Kirish">
+                            <Link style={{ color : 'white', textDecoration : 'none'}} className="mr-auto px-2"  to="/login" data-toggle="tooltip" data-placement="bottom" title="Kirish">
                                 <i className="fa fa-fw fa-sign-in-alt"></i> <span className="d-lg-none">Kirish</span>
                             </Link>
-                        </ul>
                     </div>
                 </div>
             </nav>
-        </div>
         
         );
     }

@@ -81,7 +81,7 @@ class Register extends Component {
                                             </div>
                                     </div>
                                     <div className="text-center mt-5">
-                                        <button className="btn btn-primary" type="submit">Ro'yxatdan o'tish</button>
+                                        <button className="btn btn-outline-primary" type="submit">Ro'yxatdan o'tish</button>
                                         <button className="btn btn-warning ml-3" type="reset">Tozalash</button>
                                     </div>
                                 </form>

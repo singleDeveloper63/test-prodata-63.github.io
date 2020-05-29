@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html,body{
     height: 100% !important;
     margin: 0;
@@ -34,7 +41,8 @@ html,body{
 }
 
 .registerCard input:focus{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .registerCard input:-webkit-autofill,
 .registerCard input:-webkit-autofill:hover,
@@ -42,12 +50,25 @@ html,body{
 {
     background: transparent !important;
     -webkit-text-fill-color: green;
+    -webkit-transition: background-color 99999s ease-in-out 0s;
     transition: background-color 99999s ease-in-out 0s;
 }
 
 .registerCard input:invalid{
     color: red !important;
     border-bottom: 2px solid red !important;
+}
+.registerCard input:increment::-webkit-input-placeholder{
+    color: red;
+}
+.registerCard input:increment::-moz-placeholder{
+    color: red;
+}
+.registerCard input:increment:-ms-input-placeholder{
+    color: red;
+}
+.registerCard input:increment::-ms-input-placeholder{
+    color: red;
 }
 .registerCard input:increment::placeholder{
     color: red;
@@ -65,8 +86,11 @@ html,body{
 }
 
 .registerCard button[type=submit]:active{
-    transform: scale(0.95);
-    box-shadow: none !important;
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
 .registerCard button[type=reset]{
@@ -83,8 +107,11 @@ html,body{
 
 
 .registerCard button[type=reset]:active{
-    transform: scale(0.95);
-    box-shadow: none !important;
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     border: 2px solid green;
     background-color: transparent !important;
     outline: none !important;
@@ -98,37 +125,6 @@ html,body{
 
 .registerCard label{
     color: green;
-}
-
-.navbar .navbar-brand>span{
-    font-size: 35px;
-    margin-left: 1vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    vertical-align: bottom;
-}
-
-.navbar{
-    background: rgba(3, 131, 24, 0.95);
-}
-
-.navbar .nav-item{
-    transition: 0.4s;
-}
-
-.navbar .nav-item:hover{
-    background-color: darkgreen;
-}
-
-@media screen and (max-width: 991px){
-    .nav-item:not(:last-child){
-        border-bottom: 2px solid lightgreen;
-    }
-    .nav-item{
-        width: 100%;
-    }
-    .nav.navbar-nav{
-        padding-top: 10rem;
-    }
 }
 
 .registerCard input:valid + div.input-group-append > i{

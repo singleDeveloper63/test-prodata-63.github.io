@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .footer-content{
     background-color: green;
 }
@@ -21,12 +28,15 @@
     color: rgba(255,255,255,0.6);
 }
 .avatar{
-    object-fit: cover;
-    filter: grayscale(100);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100);
     cursor: pointer;
     shape-outside: circle();
 
 }
 .avatar:hover{
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
 }

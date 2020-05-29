@@ -28,7 +28,7 @@ class Footer extends Component {
                                          2001 - yil. Toshkent shahri. Ma'lumoti yuqori.
                                          Ushbu veb saytning back - end qismi yaratuvchisi. Veb sayt dasturchining birinchi haqiqiy loyihasidan hisoblanadi.
                                          <hr/>
-                                         Aloqa : <i className="fa fa-fw fa-envelope"></i> jamshidyerzakov3@gmail.com
+                                         Aloqa : <i className="fa fa-fw fa-envelope"></i> jamshidyerzakov@gmail.com
                                      </p>
                                  </div>
                                  <div className="col-sm-12 col-md-12 col-lg-6">
