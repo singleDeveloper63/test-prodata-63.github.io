@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Register from './Pages/Register/js/register';
-import Homepage from './Pages/Homepage/js/homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
+import Homepage from './Pages/Homepage/js/homepage';
 import 'popper.js';
 
 import { BrowserRouter as Router , Route} from 'react-router-dom';
